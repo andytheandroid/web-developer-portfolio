@@ -5,12 +5,14 @@ const bodyParser = require('body-parser')
 const request = require('request');
 let apiKey = 'ff479d152ddd1ba6d6fcf232df8a0ee2';
 
-
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs')
 app.use(express.static('public'));
 
+
+//---VERY IMPORTANT NOTE----///
+
+//--Make sure that app get is called before app post, otherwhise the web will not render correctly and any post request will not work--///
 app.get('/', function (req, res) {
   res.render('index', {weather: null, error: null});
 })
