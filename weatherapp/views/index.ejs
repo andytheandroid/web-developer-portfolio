@@ -14,11 +14,11 @@
           <input type="submit" class="ghost-button" value="Get Weather">
         </form>
         <%if(weather !== null){ %>
-          <p><%= weather %></p>
+          <div class = "answer"><%= weather %></div>
         <% } %>
 
         <% if(error !== null){ %>
-          <p><%= error %></p>
+          <div class = "answer"><%= error %></div>
         <% } %>
       </fieldset>
     </div>

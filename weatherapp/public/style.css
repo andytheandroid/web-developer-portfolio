@@ -12,6 +12,11 @@ body {
   width: 600px;
   margin: 0 auto;
 }
+
+.answer{
+    background-color: green;
+    
+}
 fieldset {
   display: block;
   -webkit-margin-start: 0px;
