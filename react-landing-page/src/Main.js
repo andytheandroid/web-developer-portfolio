@@ -20,12 +20,16 @@ class Main extends Component {
     return (
             <HashRouter>  
         <div>
-          <h1 class = "title">A52</h1>
-          <ul className="header">
+        <div class = "upper-nav-bar">
+         <ul className="header">
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
            </ul>
+        
+        </div>
+          <h1 class = "title">A52</h1>
+         
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/stuff" component={Stuff}/>
