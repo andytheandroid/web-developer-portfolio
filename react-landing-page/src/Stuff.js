@@ -52,7 +52,10 @@ class Stuff extends Component {
           Word of the Day
         </Typography>
         <Typography variant="headline" component="h2">
-          benevolent
+          be
+          
+          nev
+          lent
         </Typography>
         <Typography className="pos" color="textSecondary">
           adjective
