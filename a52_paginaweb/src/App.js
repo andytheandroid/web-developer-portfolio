@@ -42,18 +42,6 @@ class App extends Component {
                 <NavItem>
                   <NavLink onClick={this.closeCollapse('mainNavbarCollapse')} to="/advanced">Registro</NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink onClick={this.closeCollapse('mainNavbarCollapse')} to="/navigation">Navigation</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink onClick={this.closeCollapse('mainNavbarCollapse')} to="/forms">Forms</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink onClick={this.closeCollapse('mainNavbarCollapse')} to="/tables">Tables</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink onClick={this.closeCollapse('mainNavbarCollapse')} to="/modals">Modals</NavLink>
-                </NavItem>
               </NavbarNav>
             </Collapse>
           </Navbar>
