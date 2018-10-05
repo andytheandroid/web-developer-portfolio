@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.a9e70478.css",
   "main.css.map": "static/css/main.a9e70478.css.map",
-  "main.js": "static/js/main.aa8ccea7.js",
-  "main.js.map": "static/js/main.aa8ccea7.js.map",
+  "main.js": "static/js/main.3d6f95a4.js",
+  "main.js.map": "static/js/main.3d6f95a4.js.map",
   "static\\media\\Roboto-Bold.eot": "static/media/Roboto-Bold.ecdd509c.eot",
   "static\\media\\Roboto-Bold.ttf": "static/media/Roboto-Bold.e31fcf18.ttf",
   "static\\media\\Roboto-Bold.woff": "static/media/Roboto-Bold.dc81817d.woff",
@@ -29,5 +29,6 @@
   "static\\media\\fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
   "static\\media\\fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
   "static\\media\\fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
-  "static\\media\\fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff"
+  "static\\media\\fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
+  "static\\media\\tower_crane.png": "static/media/tower_crane.033cd0ac.png"
 }
