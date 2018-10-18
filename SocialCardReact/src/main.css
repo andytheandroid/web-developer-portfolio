@@ -44,12 +44,13 @@ html {
   
   /*- Card body -*/
   .card-body {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     -webkit-transition: all .7s linear;
     transition: all .7s linear;
+    padding: 50px;
   }
   
   /*- Flipping the card -*/

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./main.css";
+import { EdgeHeader, FreeBird, Container, Col, Row, CardBody, Fa,Jumbotron,Button } from 'mdbreact';
 
 
 
@@ -70,17 +71,7 @@ class CardFront extends React.Component {
               <img src='https://source.unsplash.com/w8YICpz1I10/358x458' />
             </div>
 
-            <div className='col-xs-6 side-front-content'>
-              <h2>Czech based</h2>
-
-              <h1>UI/UX Designer</h1>
-
-              <p>Andrey is driven by turning ideas into scalable and and empowering experiences that solve real life problems.</p>
-
-              <p>He is currently the founder of Dvorak Media. Previously, Andrey was a product designer at Dropbox.</p>
-
-              <p>Over the years, Michael has been priviledged to have worked with Adobe, Evernote, Square and more.</p>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -133,13 +124,57 @@ class CardBack extends React.Component {
 class Card extends React.Component {
   render() {
     return(
+      
+
+
+<div>
+      
+      <Col>
       <div className='card-container'>
+       <div className='card-body'>
+          <CardBack />
+
+         
+         <CardFront />
+
+        </div>
+       
+       </div>
+       
+       <div className='card-container'>
+       <div className='card-body'>
+          <CardBack />
+
+         
+         <CardFront />
+
+        </div>
+        </div>
+            
+            
+      <div className='card-container'>
+
+       <div className='card-body'>
+          <CardBack />
+
+         
+         <CardFront />
+
+        </div>
+        </div>
+</Col>
+      <div className='card-container'>
+
         <div className='card-body'>
           <CardBack />
 
-          <CardFront />
+         
+         <CardFront />
+
         </div>
-      </div>
+        </div>
+
+        </div>
     )
   }
 }
