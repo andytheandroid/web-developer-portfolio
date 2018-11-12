@@ -10,6 +10,36 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ *= require vendor/simple-line-icons/css/simple-line-icons.css
+ *= require vendor/animate.css/animate.min.css
+ *= require vendor/whirl/dist/whirl.css
+ *= require vendor/weather-icons/css/weather-icons.min.css
+ *= require vendor/trix/trix
+ *= require bootstrap
+ *= require vendor/lightbox/lightbox.css
+ *= require vendor/select2/select2.css
+ *= require app
  *= require_self
  */
+ul.list-of-images {
+    list-style: none;
+    margin: 0;
+}
+
+ul.list-of-images li {
+    display: inline-block;
+}
+
+.ratio-4-3{
+    width:100%;
+    position:relative;
+    background:url() 50% 50% no-repeat;
+    background-size:cover;
+    background-clip:content-box;
+}
+
+.ratio-4-3:before{
+    display:block;
+    content:"";
+    padding-top:75%;
+}

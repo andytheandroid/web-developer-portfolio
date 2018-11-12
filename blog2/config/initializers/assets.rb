@@ -10,6 +10,8 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( main.css )
 Rails.application.config.assets.precompile += %w( util.css )
+Rails.application.config.assets.precompile += %w( public.css )
+
 
 
 # Precompile additional assets.
