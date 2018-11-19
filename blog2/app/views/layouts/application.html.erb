@@ -16,9 +16,7 @@
          <nav class="navbar topnavbar" role="navigation">
             <!-- START navbar header-->
             <div class="navbar-header">
-                  <div class="navbartitle">
-                  Mi Blog de Ruby on Rails
-                  </div>
+                
                   
             </div>
             <!-- END navbar header-->
@@ -60,12 +58,50 @@
          </nav>
          <!-- END Top Navbar-->
       </header>
+      <!-- sidebar-->
+      <aside class="aside">
+         <!-- START Sidebar (left)-->
+         <div class="aside-inner">
+            <nav class="sidebar" data-sidebar-anyclick-close="">
+               <!-- START sidebar nav-->
+               <ul class="nav">
+                  <!-- START user info-->
+                  <li class="has-user-block">
+                     <div class="collapse" id="user-block">
+                        <div class="item user-block">
+                           <!-- Name and Job-->
+                           <div class="user-block-info">
+                               
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <!-- END user info-->
+                  <!-- Navegacion principal -->
+                  <li class="nav-heading">
+                    <span>Main Menu</span>
+                  </li>
+                  <li>
+                      <em class="icon-home"></em>
+                      <span>See all Posts</span>
+                  </li>
+                 
+                  
+               </ul>
+               <!-- END sidebar nav-->
+            </nav>
+         </div>
+         <!-- END Sidebar (left)-->
+      </aside>
+      
+         <!-- END Top Navbar-->
+      </header>
       
       <%= yield %>
 
       <!-- Page footer-->
       <footer>
-         <span>&copy; 2018 - Si lees esto es que es parte de la vista maestra | Desarrollado por Caelos Torres </span>
+         <span>&copy; 2018 - Si lees esto es que es parte de la vista maestra | Desarrollado por Carlos Torres </span>
       </footer>
       
     </div>

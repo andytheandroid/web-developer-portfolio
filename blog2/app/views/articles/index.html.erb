@@ -1,23 +1,58 @@
-<h1>Listing articles</h1>
- 
-<%= link_to 'New article', new_article_path %>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th></th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-       <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article_path(article),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-    </tr>
-  <% end %>
+<!-- Main section-->
+<section>
+<!-- Page content-->
+<div class="content-wrapper">
+<h3>Listing articles</h3>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+           Blog posts
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table table-stripped table-hover">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Comment</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+
+<tbody>
+<% @articles.each do |article| %>
+<tr>
+  <td><%= article.title %></td>
+  <td><%= article.text %></td>
+  <td><%= link_to 'Show', article_path(article) %></td>
+   <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article_path(article),
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %></td>
+</tr>
+</tr>
+<% end %>
+</tbody>
 </table>
+</div>
+</div>
+  </div> <!-- end of panel-footer -->
+      </div>
+    </div>
+  </div> <!-- end of col -->
+
+<div class="panel-footer clearfix">
+                <div class="pull-right">
+        <%= link_to new_article_path do %>
+                      <button class="btn btn-primary">
+                        New Article
+                      </button>
+                    <% end %>
+</div>
+</div>
+              
+</section>
+
+

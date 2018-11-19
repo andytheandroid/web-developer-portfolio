@@ -1,3 +1,4 @@
+<!--
 <%= form_with model: @article, local: true do |form| %>
  
   <% if @article.errors.any? %>
@@ -28,4 +29,40 @@
     <%= form.submit %>
   </p>
  
+<% end %>
+
+-->
+<!-- -->
+
+
+<%= form_with model: @article, local: true, html: { class: "form-horizontal" } do |form| %>
+  <fieldset>
+    <div class="form-group">
+      <%= form.label :title, "Nombre", class:"col-sm-2 control-label" %>
+      <div class="col-sm-4">
+        <%= form.text_field :title, class: "form-control"  %>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="form-group">
+      <%= form.label :text, "Comentario", class:"col-sm-2 control-label" %>
+      <div class="col-sm-4">
+        <%= form.text_field :title, class: "form-control"  %>
+      </div>
+      </div>
+    </div>
+  </fieldset>
+
+      <%= form.submit do %> 
+
+ <button class="btn btn-primary">
+          Create Article
+
+  </button>
+ 
+<% end  %>
+  
+
 <% end %>
