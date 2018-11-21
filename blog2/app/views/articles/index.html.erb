@@ -26,11 +26,25 @@
 <tr>
   <td><%= article.title %></td>
   <td><%= article.text %></td>
-  <td><%= link_to 'Show', article_path(article) %></td>
-   <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article_path(article),
+  <td><%= link_to article_path(article) do %>
+     <button class="btn btn-primary">
+                                Show
+                              </button>
+                              <% end %>
+  </td>
+   <td><%= link_to  edit_article_path(article) do %>
+      <button class="btn btn-primary">
+                                Edit
+                              </button>
+                              <% end %>
+   </td>
+    <td> <%= link_to article_path(article),
           method: :delete,
-          data: { confirm: 'Are you sure?' } %></td>
+          data: { confirm: 'Are you sure?' } do %>
+                              <button class="btn btn-danger">
+                              Destroy
+                              </button>
+                            <% end %></td>
 </tr>
 </tr>
 <% end %>
