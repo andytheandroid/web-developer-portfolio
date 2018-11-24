@@ -1,7 +1,8 @@
 class CommentsController < ApplicationController
 
- # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
- 
+  #very dangerous use this only for developement and testing
+  skip_before_action :verify_authenticity_token
+
 
 	 def create
     @article = Article.find(params[:article_id])
